@@ -6,81 +6,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Brazilians in Tech</title>
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header>
-        <img src="./img/logo.png" alt="Logo Brazilians in Tech">
-        <h1>Lugar de mulher é onde ela quiser!</h1>
-        <p>Está procurando oportunidades de estágio, emprego ou bolsas de estudo?
-            Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo?
-            Confira aqui embaixo o que temos pra você!</p>
-        <a href="#">Ir para seção das vagas</a>
+        <div class="container">
+            <img class="logo" src="./img/logo.png" alt="Logo Brazilians in Tech">
+            <h1 class="title-1">Lugar de mulher é onde ela quiser!</h1>
+            <p class="text-1">Está procurando oportunidades de estágio, emprego ou bolsas de estudo?<br>
+                Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo?</p>
+            <h3 class="title-5">Confira aqui embaixo o que temos pra você!</h3>
+            <a href="#">Ir para seção das vagas</a>
+        </div>
     </header>
 
     <!-- Conteúdo Principal -->
-    <main>
+    <main class="container">
+        <h2 class="title-4 titulo">Vagas</h2>
+        <div class="container__vagas">
+            <!-- Vagas -->
+            <section>
 
-        <!-- Vagas -->
-        <section>
-            <h2>Vagas</h2>
-            <div>
-                <h2>Pessoa desenvolvedora front-end - React JS</h2>
-                <span>Kenzie Academy</span>
-                <span>Curitiba</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <span>Home Office</span>
-                <button>Candidatar</button>
-            </div>
+                <div class="vagas__card">
+                    <h2 class="title-4">Pessoa desenvolvedora front-end - React JS</h2>
+                    <div class="vagas__local">
+                        <span class="text-3">Kenzie Academy</span>
+                        <span class="text-3">Curitiba</span>
+                    </div>
+                    <p class="text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <div class="card__candidatar">
+                        <span class="text-3 card__tag">Home Office</span>
+                        <button class="btn-cadastrar">Candidatar</button>
+                    </div>
 
-            <div>
-                <h2>Pessoa desenvolvedora back-end - Node JS</h2>
-                <span>Brazilians in Tech</span>
-                <span>Rio de Janeiro</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <span>Presencial</span>
-                <button>Candidatar</button>
-            </div>
+                </div>
 
-            <div>
-                <h2>Pessoa desenvolvedora Mobile - React Native</h2>
-                <span>Brazilians in Tech</span>
-                <span>Rio de Janeiro</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <span>Híbrido</span>
-                <button>Candidatar</button>
-            </div>
-        </section>
+                <div class="vagas__card">
+                    <h2 class="title-4">Pessoa desenvolvedora back-end - Node JS</h2>
+                    <div class="vagas__local">
+                        <span class="text-3">Brazilians in Tech</span>
+                        <span class="text-3">Rio de Janeiro</span>
+                    </div>
+                    <p class="text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <div class="card__candidatar">
+                        <span class="text-3 card__tag">Presencial</span>
+                        <button class="btn-cadastrar">Candidatar</button>
+                    </div>
+                </div>
 
-        <!-- Barra Lateral -->
-        <aside>
-            <h2>Vagas Selecionadas</h2>
+                <div class="vagas__card">
+                    <h2 class="title-4">Pessoa desenvolvedora Mobile - React Native</h2>
+                    <div class="vagas__local">
+                        <span class="text-3">Brazilians in Tech</span>
+                        <span class="text-3">Rio de Janeiro</span>
+                    </div>
 
-            <div>
-                <h3>Pessoa desenvolvedora front-end - React JS</h3>
-                <img src="./img/trash.svg" alt="">
-                <span>Kenzie Academy</span>
-                <span>Curitiba</span>
-            </div>
+                    <p class="text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <div class="card__candidatar">
+                        <span class="text-3 card__tag">Híbrido</span>
+                        <button class="btn-cadastrar">Candidatar</button>
+                    </div>
+                </div>
+            </section>
 
-            <div>
-                <h3>Pessoa desenvolvedora back-end - Node JS</h3>
-                <img src="./img/trash.svg" alt="">
-                <span>Brazilians in Tech</span>
-                <span>Curitiba</span>
-            </div>
+            <!-- Barra Lateral -->
+            <aside class="vagas__selecionadas">
+                <h2 class="title-4">Vagas Selecionadas</h2>
 
-            <div>
-                <h3>Pessoa desenvolvedora Mobile - React Native</h3>
-                <img src="./img/trash.svg" alt="">
-                <span>Kenzie Academy</span>
-                <span>Curitiba</span>
-            </div>
+                <div class="card__selecao">
+                    <div class="card__selecao__vaga">
+                        <h3 class="title-5">Pessoa desenvolvedora front-end - React JS</h3>
+                        <button class="btn-trash">
+                            <img class="trash" src="./img/trash.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="vagas__local">
+                        <span class="text-3">Kenzie Academy</span>
+                        <span class="text-3">Curitiba</span>
+                    </div>
+                </div>
 
-        </aside>
+                <div class="card__selecao">
+                    <div class="card__selecao__vaga">
+                        <h3 class="title-5">Pessoa desenvolvedora back-end - Node JS</h3>
+                        <button class="btn-trash">
+                            <img class="trash" src=" ./img/trash.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="vagas__local">
+                        <span class="text-3">Brazilians in Tech</span>
+                        <span class="text-3">Curitiba</span>
+                    </div>
+                </div>
 
+                <div class="card__selecao">
+                    <div class="card__selecao__vaga">
+                        <h3 class="title-5">Pessoa desenvolvedora Mobile - React Native</h3>
+                        <button class="btn-trash">
+                            <img class="trash" src=" ./img/trash.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="vagas__local">
+                        <span class="text-3">Kenzie Academy</span>
+                        <span class="text-3">Curitiba</span>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
     </main>
 
 </body>

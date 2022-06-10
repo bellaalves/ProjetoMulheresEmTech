@@ -1,0 +1,240 @@
+/* Utilitários */
+:root {
+  /* Brand Palette */
+  --brand-1: #bc00ff;
+  --brand-2: #540073;
+
+  /* Grey Scale Palette */
+  --grey-1: #212529;
+  --grey-2: #343a40;
+  --grey-3: #dee2e6;
+  --grey-4: #e9ecef;
+  --grey-5: #f1f3f5;
+  --grey-6: #ffffff;
+}
+
+.title-1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.title-4 {
+  font-size: 1.375rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.title-5 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.text-1 {
+  font-size: 1.125rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.text-2 {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.text-3 {
+  font-size: 0.875rem;
+  line-height: 1.57;
+  font-weight: 400;
+}
+
+/* Estilos Gerais */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background: var(--grey-3);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Cabeçalho */
+header {
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 0 70px 0;
+}
+
+.logo {
+  margin-bottom: 48px;
+}
+
+.container h1 {
+  color: var(--grey-3);
+  margin-bottom: 32px;
+}
+
+.container p {
+  color: var(--grey-5);
+  margin-bottom: 16px;
+}
+
+.container h3 {
+  color: var(--grey-5);
+  margin-bottom: 32px;
+}
+
+.container a {
+  display: inline-block;
+  font-size: 1rem;
+  color: var(--grey-6);
+  background: var(--brand-1);
+  border: 2px solid var(--brand-1);
+  border-radius: 8px;
+  padding: 12px 48px;
+}
+
+.container a:hover {
+  background: var(--brand-2);
+  border: 2px solid var(--brand-2);
+}
+
+/* Conteúdo Principal */
+.titulo {
+  margin-bottom: 50px;
+}
+
+.container__vagas {
+  display: flex;
+  gap: 32px;
+}
+
+/* Seção de Vagas */
+.vagas__card {
+  background: var(--grey-6);
+  padding: 32px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.vagas__card h2 {
+  color: var(--grey-1);
+  margin-bottom: 18px;
+}
+
+.vagas__local {
+  margin-bottom: 28px;
+}
+
+.vagas__card span {
+  display: inline-block;
+  color: var(--grey-2);
+  margin-right: 32px;
+}
+
+.vagas__card p {
+  color: var(--grey-2);
+  margin-bottom: 28px;
+}
+
+.card__tag {
+  padding: 4px 12px;
+  background: var(--grey-3);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.btn-cadastrar {
+  font-size: 1rem;
+  font-family: "Poppins";
+  color: var(--grey-6);
+  background: var(--brand-1);
+  border: 2px solid var(--brand-1);
+  border-radius: 8px;
+  padding: 8px 28px;
+  cursor: pointer;
+}
+
+.btn-cadastrar:hover {
+  background: var(--brand-2);
+  border: 2px solid var(--brand-2);
+}
+
+.card__candidatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+/* Barra Lateral com Vagas Selecionadas */
+.vagas__selecionadas {
+  background: var(--grey-6);
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.vagas__selecionadas h2 {
+  color: var(--grey-1);
+  margin-bottom: 32px;
+}
+
+.card__selecao__vaga {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.btn-trash {
+  flex-shrink: 0;
+  border: none;
+  background: var(--grey-5);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-trash:hover {
+  background: var(--grey-3);
+}
+
+.trash {
+  padding: 8px;
+}
+
+.card__selecao h3 {
+  color: var(--grey-1);
+  margin-bottom: 0;
+}
+
+.card__selecao span {
+  display: inline-block;
+  color: var(--grey-2);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
